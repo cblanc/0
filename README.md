@@ -3,7 +3,7 @@
 Install dotfiles and `make init`
 
 ```bash
-curl 0.nf3.co | bash
+curl https://0.nf3.co | bash
 ```
 
 ## Links
