@@ -1,0 +1,19 @@
+{
+  "name": "@cablanchard/0",
+  "version": "1.0.0",
+  "description": "0.nf3.co",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cblanc/0.git"
+  },
+  "author": "Christopher Blanchard",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cblanc/0/issues"
+  },
+  "homepage": "https://github.com/cblanc/0#readme"
+}
