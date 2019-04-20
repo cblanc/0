@@ -1,4 +1,4 @@
-# ♞<
+# ♞
 
 Install dotfiles and `make init`
 
