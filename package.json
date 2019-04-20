@@ -4,7 +4,7 @@
   "description": "0.nf3.co",
   "main": "index.js",
   "scripts": {
-    "test": "npm test"
+    "start": "./node_modules/.bin/netlify dev"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/cblanc/0/issues"
   },
-  "homepage": "https://github.com/cblanc/0#readme"
+  "homepage": "https://github.com/cblanc/0#readme",
+  "devDependencies": {
+    "netlify-cli": "~2.11.11"
+  }
 }
