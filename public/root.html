@@ -1,0 +1,8 @@
+#!/bin/sh
+
+apt update && \
+apt install make && \
+git clone https://github.com/cblanc/dotfiles && \
+cd dotfiles && \
+make provision-root && \
+make provision-user
