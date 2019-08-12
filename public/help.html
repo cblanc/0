@@ -6,10 +6,31 @@
   </head>
   <body>
     <main>
+      <script>
+        const noop = () => {};
+        const copy = sourceId => {
+          return () => {
+            const text = document.getElementById(sourceId).textContent;
+            navigator.clipboard.writeText(text)
+              .then(() => {
+                alert(`Copied "${text}" to clipboard"`);
+              }, () => {
+                alert("Unable to copy to clipboard");
+              });
+          }
+        };
+        const setupClipboard = (source, link) => {
+          document
+            .getElementById(link)
+            .addEventListener("click", copy(source));
+        };
+      </script>
       <h1>♞</h1>
-      <p>Install dotfiles and <code>make init</code></p>
-      <pre><code>curl https://0.nf3.co | bash</code>
+      <p>Install dotfiles and <code>make init</code>. <a href="#" id="init-link">Copy</a></p>
+      <pre>
+        <code id="init">curl https://0.nf3.co | bash</code>
       </pre>
+      <script>setupClipboard("init", "init-link");</script>
       <p><a href="https://github.com/cblanc/dotfiles">Dotfiles GitHub</a></p>
       <p><a href="https://github.com/cblanc/0">0.nf3.co GitHub</a></p>
     </main>
