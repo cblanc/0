@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/cblanc/0#readme",
   "devDependencies": {
-    "netlify-cli": "~2.19.4"
+    "netlify-cli": "~2.20.0"
   }
 }
